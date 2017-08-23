@@ -24,6 +24,9 @@ echo '<br />-------------------------<br/>';
 
 echo $text{0};
 
+echo '<br /><br/><br/><br/><br/><br/>';
+
+echo 'name of value is: '.$name_var;
 
 ?>
     </body>
