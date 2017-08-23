@@ -37,6 +37,13 @@ echo '<br />-------------------------<br/>';
  
 echo (int)($zm)."<br />";
 echo round($zm, 0);
+echo '<br />-------------------------<br/>';
+
+$goodOrBad = true;
+
+echo $goodOrBad;
+
+
 ?>
     </body>
 </html>
