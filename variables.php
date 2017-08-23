@@ -27,6 +27,15 @@ echo $text{0};
 echo '<br /><br/><br/><br/><br/><br/>';
 
 echo 'name of value is: '.$name_var;
+echo '<br />-------------------------<br/>';
+
+$zm = 4.2;
+var_dump($zm);
+
+//if u wonna change float type at int type
+echo '<br />-------------------------<br/>';
+
+echo (int)($zm);
 
 ?>
     </body>
