@@ -12,9 +12,18 @@ $name_var = 4;
 echo $name_var;
 
 
+echo '<br />-------------------------<br/>';
 
+var_dump($name_var);
 
-var_dump($name_var)
+echo '<br />-------------------------<br/>';
+
+$text = "blavlal";
+var_dump($text);
+echo '<br />-------------------------<br/>';
+
+echo $text{0};
+
 
 ?>
     </body>
