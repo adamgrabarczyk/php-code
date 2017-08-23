@@ -42,6 +42,13 @@ echo '<br />-------------------------<br/>';
 $goodOrBad = true;
 
 echo $goodOrBad;
+echo '<br />-------------------------<br/><br/><br/>';
+
+
+define("name_of_game", "GTA");
+
+echo name_of_game;
+
 
 
 ?>
