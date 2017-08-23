@@ -10,6 +10,12 @@
 $name_var = 4;
 
 echo $name_var;
+
+
+
+
+var_dump($name_var)
+
 ?>
     </body>
 </html>
