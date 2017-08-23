@@ -34,9 +34,9 @@ var_dump($zm);
 
 //if u wonna change float type at int type
 echo '<br />-------------------------<br/>';
-
-echo (int)($zm);
-
+ 
+echo (int)($zm)."<br />";
+echo round($zm, 0);
 ?>
     </body>
 </html>
