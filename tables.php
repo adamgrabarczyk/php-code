@@ -37,10 +37,19 @@ echo $tab[1];
 
 echo "<pre>";
 print_r($tab); // informuje czlowieka o całym obiekcie (co jest przyporzadkowane do czego)  
-echo "</pre>";
+echo "</pre>"."<br/><br/>";
 
 
 
+// Tablica asocjacyjna
+
+$człowiek ["imie"] = "adam";
+$człowiek ["nazwisko"] = "grabarczyk";
+$człowiek ["wiek"] = 15;
+
+echo "<pre>";
+print_r($człowiek);   
+echo "</pre>"."<br/><br/>";
 
 
 ?>
