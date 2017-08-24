@@ -58,11 +58,36 @@ echo "</pre>"."<br/><br/>";
 
 
 
-$tab2 = array(2 => "lala", "lala", "blala"); 
+$tab2 = array("imie" => "lala", "nazwiso" =>"blala"); //asocjacja (strzałka symbolizuje skojarzenie w kodzie)
 
 echo "<pre>";
 print_r($tab2);   
 echo "</pre>"."<br/><br/>";
+
+
+
+
+
+// tablice wielowymiarowe
+
+
+
+
+$ludzie[0]["imie"] = 'adam';
+$ludzie[0]["nazwisko"] = 'grabarczyk';
+
+
+$ludzie[1]["imie"] = 'dominika';
+$ludzie[1]["nazwisko"] = 'pępek';
+
+
+
+echo "<pre>";
+print_r($ludzie);   
+echo "</pre>"."<br/><br/>";
+
+
+
 
 
 ?>
