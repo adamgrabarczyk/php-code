@@ -25,10 +25,23 @@ echo $liczby[0]."<br/><br/>";
 
 $tab[0] = "cos";
 $tab[1] = 50;
+$tab[] = 54; //dodaje wartosc na koniec tablicy jesli nie wskazemy na kotrym ma byc miejscu
 
 
 echo $tab[0]."<br/><br/>";
 echo $tab[1];
+
+
+
+
+
+echo "<pre>";
+print_r($tab); // informuje czlowieka o całym obiekcie (co jest przyporzadkowane do czego)  
+echo "</pre>";
+
+
+
+
 
 ?>
     </body>
