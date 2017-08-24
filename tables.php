@@ -52,6 +52,19 @@ print_r($człowiek);
 echo "</pre>"."<br/><br/>";
 
 
+
+
+
+
+
+
+$tab2 = array(2 => "lala", "lala", "blala"); 
+
+echo "<pre>";
+print_r($tab2);   
+echo "</pre>"."<br/><br/>";
+
+
 ?>
     </body>
 </html>
