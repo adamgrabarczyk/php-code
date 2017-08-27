@@ -49,6 +49,31 @@
               
           }
           
+          echo '<br/>-------------------<br/>';
+          echo '<br/><br/><br/><br/><br/><br/>';
+          
+          $c = 10;
+          $d = "10";
+          
+          
+          
+          if ($c == $d){
+              
+              $c += 5;
+              echo 'c jest rowne d';
+          echo '<br/>-------------------<br/>';
+              if ($c > $d){
+           
+                  echo 'ababa';
+       } else if ($c < $d){
+               
+           echo 'adasdasdas';    
+           
+                  
+              }
+              
+          }
+          
           
           
         
