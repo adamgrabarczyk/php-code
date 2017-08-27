@@ -43,7 +43,7 @@
           echo '<br/>-------------------<br/>';
         
           
-          if ((15 > 7 && 7 > 4) || (10 == 10)) {
+          if ((4 > 7 && 7 > 4) || (10 == 10)) { // drugi warunek jest alternatywa, jesli 1 nie bd spelniony
               
                echo 'true';
               
