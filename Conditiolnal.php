@@ -74,7 +74,37 @@
               
           }
           
-          
+          /*
+      * if (warunek1)
+      *     instrukcja1;
+      * 
+      * if (warunek1)
+      *     instrukcja1;
+      * else
+      *     instrukcja2;
+      * 
+      * if (warunek1)
+      *     instrukcja1;
+      * else if (warunek2)
+      * {
+      *     instrukcja2;
+      *     instrukcjanta;
+      * }
+      * else
+      *     instrukcja3;
+      * 
+      * if (warunek)
+      *     instrukcja;
+      * else if (warunek2)
+      *     instrukcja2;
+      * else if (warunek3)
+      *     instrukcja3;
+      * else if
+      * .....
+      * 
+      * 
+      */
+     
           
         
         ?>
