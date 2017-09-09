@@ -36,8 +36,24 @@
         
         echo getHigher(5, 6);
         
+        echo '<br/><br/><br/>';
+        
+        // how to change global function 
+        
+        $frog = 50;
+        
+        function changeValue (&$valueToChange, $value) {
+            $valueToChange = $value;
+        }
         
         
+        changeValue($frog, 80);
+        
+        echo $frog;
+        
+        
+        
+      
         ?>
     </body>
 </html>
