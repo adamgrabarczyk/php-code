@@ -11,6 +11,21 @@
         
         echo $stringLen;
         
+        
+        echo '<br/><br/><br/>';
+        
+        
+        function nameFunc () {
+            
+            echo 'lalala';
+            
+        }
+        
+        nameFunc();
+        
+        
+        
+        
         ?>
     </body>
 </html>
