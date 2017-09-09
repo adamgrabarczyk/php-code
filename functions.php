@@ -24,8 +24,26 @@
         nameFunc();
         
         
+        echo '<br/><br/><br/>';
+        
+        
+        
+        
+        function getHigher ($c, $d)
+        {
+            return ($c > $d ? $c : $d);
+        }                
+        
+        echo getHigher(5, 6);
+        
         
         
         ?>
     </body>
 </html>
+
+
+
+
+
+
