@@ -11,12 +11,37 @@ and open the template in the editor.
     </head>
     <body>
         <?php
-        
+        // for
 for ($i = 0; $i < 10; $i++ ){
     
     echo $i."<br/>";
     
 }        
+
+
+echo '<br/>--------------<br/>';
+
+// while 
+
+$j = 0;
+
+while ($j < 3) 
+    
+{
+    echo $j."<br/>";
+    $j++;
+}
+
+echo '<br/>--------------<br/>';
+
+
+
+echo "\$i= ".$i."<br/>" ;
+echo '\$j= '.$j ;
+
+
+
+
         
         ?>
     </body>
