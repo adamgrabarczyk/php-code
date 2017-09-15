@@ -39,7 +39,20 @@ echo '<br/>--------------<br/>';
 echo "\$i= ".$i."<br/>" ;
 echo '\$j= '.$j ;
 
+echo '<br/>--------------<br/>';
 
+// do while
+
+
+$k = 0;
+
+do {
+    
+    echo $k."<br/>";
+    
+    $k++;
+    
+}while ($k != 5);
 
 
         
