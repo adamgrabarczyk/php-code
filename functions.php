@@ -42,7 +42,7 @@
         
         $frog = 50;
         
-        function changeValue (&$valueToChange, $value) {
+        function changeValue (&$valueToChange, $value) {   // the most importatnt chart is & !!
             $valueToChange = $value;
         }
         
