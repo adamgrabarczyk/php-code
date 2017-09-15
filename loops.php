@@ -55,7 +55,43 @@ do {
 }while ($k != 5);
 
 
-        
+    echo '<br/>--------------<br/>';
+
+// samples
+
+
+
+for ($o = 0; $o < 10; $o += 2 ) {
+    
+    $table[] = $o;
+    
+    
+}
+
+
+
+
+for ($o = 0; $o < count($table); $o++) {
+    
+    echo $table[$o]."<br/>";
+    
+    
+}
+
+$table["name"] = ["Adam"];
+$table["surname"] = ["Grabek"];
+
+echo $table["name"];
+
+foreach ($table as $key => $value)
+{
+    
+    echo $table[$key]."<br/>";
+}
+
+
+
+
         ?>
     </body>
 </html>
