@@ -23,6 +23,9 @@
             
             echo '<br />';
             echo '</tr>';
+            
+            if ($i == 10)
+                break; 
         }
         echo '</table>';
         }
