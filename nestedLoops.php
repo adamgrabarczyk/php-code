@@ -29,6 +29,23 @@
         
         tableMulti(20, 20);
         
+        echo '<br/>------------------------<br/>';
+        
+        
+        function power ($a, $w) {
+            
+            $p = $a;
+            
+//            for ($i = 0; i < $w -1; $i++)
+            while (--$w)
+            $a += $p; 
+            
+            return $a; 
+        }
+        
+        
+        echo power(3, 3);
+        
         
         ?>
     </body>
