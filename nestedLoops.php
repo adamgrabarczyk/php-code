@@ -10,19 +10,25 @@
         
         // pętle zagnieżdżone (petla w petli)
          
+        function tableMulti ($wiersz, $kolumna) {
+
         echo '<table>';
         
-        for($i = 1; $i <= 10; $i++){
+        for($i = 1; $i <= $wiersz; $i++){
             
             echo '<tr>';
             
-            for ($j = 1; $j <= 10; $j++ )
+            for ($j = 1; $j <= $kolumna; $j++ )
            echo "<td>".($i*$j)."</td>";
             
             echo '<br />';
             echo '</tr>';
         }
         echo '</table>';
+        }
+        
+        tableMulti(20, 20);
+        
         
         ?>
     </body>
