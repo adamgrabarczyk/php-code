@@ -3,7 +3,28 @@
         <meta http-equiv="content-type" content="text/html; charset=utf-8" />
         
        
-        
+        <?php
+                if (isset($_GET['page']))
+                {
+                    $allowed_pages = array("basketball", "football", "tenis");
+
+                    $page = filter_var($_GET['page'], FILTER_SANITIZE_STRING);           
+
+                    if (!empty($page))
+                    {
+                        if (in_array($page, $allowed_pages))                       
+                        {
+                            if (is_file($page.".php"))
+                                include($page.".php");              
+                        }
+                    }                   
+                }
+                else                
+                    include ("start.php");                  
+                
+                    
+                echo "<title>$title</title>";
+        ?>
         
         <link rel="stylesheet" href="StyleSheet.css" type="text/css" />
         <script type="text/javascript" src="js.js"></script>
