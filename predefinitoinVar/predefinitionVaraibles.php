@@ -16,17 +16,38 @@
             </div>
             
             <div id="menu">
-                <div><a href="?page=java">Basketball</a></div>
-                <div><a href="?page=php">Football</a></div>
-                <div><a href="?page=mysql">Tenis</a></div>
+                <div><a href="?page=basketball">Basketball</a></div>
+                <div><a href="?page=football">Football</a></div>
+                <div><a href="?page=tenis">Tenis</a></div>
             </div>
             <div id="content">     
                 <div id="text">
         <?php
         
-        if($_GET['akcja'] == "QRA");
-echo 'jestes na te jstronie';
         
+       
+//        if($_GET['akcja'] == "QRA");
+//echo 'jestes na te jstronie';
+        
+       
+        
+        if(isset($_GET['page']))           //isset sprawdza czy isnieje dany zakres
+        {
+        $page = filter_var($_GET['page'], FILTER_SANITIZE_STRING); // filtrowanie zmiennych
+        
+        if (!empty($page))   // empty - zwraca prawda/falsz jezeli zmienna jest pusta/niepusta
+        {
+            
+            if (is_file($page."html"))    // is_file sprawdza czy istnieje jakis plik
+            {
+                include($page.".html");   // include - dołącza plik
+                
+            } else {
+                echo 'taka strona nie istnieje';    
+            }
+        }
+            
+        }
         
         echo '<br/>';
         
