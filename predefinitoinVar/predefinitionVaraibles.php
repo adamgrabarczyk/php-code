@@ -24,30 +24,29 @@
                 <div id="text">
         <?php
         
+       
         
        
 //        if($_GET['akcja'] == "QRA");
 //echo 'jestes na te jstronie';
         
        
-        
-        if(isset($_GET['page']))           //isset sprawdza czy isnieje dany zakres
-        {
-        $page = filter_var($_GET['page'], FILTER_SANITIZE_STRING); // filtrowanie zmiennych
-        
-        if (!empty($page))   // empty - zwraca prawda/falsz jezeli zmienna jest pusta/niepusta
-        {
+      
             
-            if (is_file($page."html"))    // is_file sprawdza czy istnieje jakis plik
+        if (isset($_GET['page']))          //isset sprawdza czy isnieje dany zakres
+        {   
+            
+            $page = filter_var($_GET['page'], FILTER_SANITIZE_STRING);     // filtrowanie zmiennych      
+            
+            if (!empty($page))               // empty - zwraca prawda/falsz jezeli zmienna jest pusta/niepusta
             {
-                include($page.".html");   // include - dołącza plik
                 
-            } else {
-                echo 'taka strona nie istnieje';    
+                    if (is_file($page.".html"))           // is_file sprawdza czy istnieje jakis plik
+                        include($page.".html");           // include - dołącza plik
+                    else
+                        echo "Taka strona nie istnieje";
+                }
             }
-        }
-            
-        }
         
         echo '<br/>';
         
