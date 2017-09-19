@@ -13,6 +13,9 @@ if (isset($_POST['login']) && isset($_POST['haslo']))
         if($login == "Adam" && $haslo == "zabka") {
             
             echo 'jestes zalogowany';
+        } else {
+        
+            echo 'podałeś niepoprawny login lub hasło';
         }
         
     } else {
