@@ -6,7 +6,7 @@
     </head>
     <body>
 
-    <forn action="odbierz.php" method="post" enctype="multipart/form-data">
+        <form action="odbierz.php" method="post" enctype="multipart/form-data">
         <div>
             
             <div>
