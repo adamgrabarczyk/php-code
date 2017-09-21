@@ -1,9 +1,22 @@
 <!DOCTYPE html>
+
+<?php
+  
+session_start(); // od tego czasu mozemy tworzyc zmienne sesyjne $_SESSION['nazwa'] = wartość.
+
+
+    ?>
+
+
 <html>
     <head>
         <meta charset="UTF-8">
         <title></title>
     </head>
+    
+    
+    
+    
     <body>
 
         <form action="index.php" method="post" enctype="multipart/form-data">
@@ -31,19 +44,23 @@
 
        <?php
 
-if (isset($_POST['login']) && isset($_POST['haslo']))
+if ((isset($_POST['login']) && isset($_POST['haslo'])) || $_SESSION['zalogowany'] == 1)
 {
     
-    if(!empty($_POST['login']) && !empty($_POST['haslo']))
+    if((!empty($_POST['login']) && !empty($_POST['haslo'])) || $_SESSION['zalogowany'] == 1)
     {
         
         $login = filter_var($_POST['login'], FILTER_SANITIZE_STRING);
         
         $haslo = filter_var($_POST['haslo'], FILTER_SANITIZE_STRING);
      
-        if($login == "Adam" && $haslo == "zabka") {
+        if(($login == "Adam" && $haslo == "zabka") || $_SESSION['zalogowany'] == 1) {
             
-            echo 'jestes zalogowany';
+            echo 'jestes zalogowany: '.$login."<br/>";
+            echo 'panel administracyjny <br/>';
+            
+            $_SESSION['zalogowany'] = 1 ;
+            
         } else {
         
             echo 'podałeś niepoprawny login lub hasło';
