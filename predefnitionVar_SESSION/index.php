@@ -14,7 +14,7 @@
         
             $_COOKIE['ref'] = $ref;
             
-            setcookie("ref", $ref, time()+ 60*60*24*30*3); 
+            setcookie("ref", $ref, time()+ 60*60*24*30*3, "/" ); 
         }
     
     }

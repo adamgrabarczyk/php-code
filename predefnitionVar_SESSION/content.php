@@ -12,11 +12,12 @@
             if ($ref == "kazik")
             {
                // brawo kazik 
-               
-                 setcookie("ref", NULL, time()-1); 
+               $_COOKIE['ref'] = NULL;
+                 setcookie("ref", NULL, time()-1, "/"); 
                 
                 
             }
+            echo 'Twoim polecającym jest: '.$ref."<br/>";
         }
         echo "<a href='index.php'>Odśwież</a><br />";
         echo "<a href='index.php?akcja=wyloguj'>Wyloguj się</a><br />";
