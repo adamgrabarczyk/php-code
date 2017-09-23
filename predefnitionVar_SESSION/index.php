@@ -4,6 +4,21 @@
   <?php
     session_start(); // od tego czasu mozemy tworzyc zmienne sesyjne $_SESSION['nazwa'] = wartość.
     
+    
+    if(isset($_GET['ref']))
+    {
+        
+        $ref = filter_var($_GET['ref'], FILTER_SANITIZE_STRING);
+        
+        if(!isset($_COOKIE['ref'])) {
+        
+            $_COOKIE['ref'] = $ref;
+            
+            setcookie("ref", $ref, time()+ 60*60*24*30*3); 
+        }
+    
+    }
+    
     if (!isset($_SESSION['initiate']))
     {
         session_regenerate_id();
@@ -13,6 +28,10 @@
         session_start();        
         $_SESSION['initiate'] = 1;
     }
+//    $_COOKIE['ref'] = "another value ";
+//    setcookie("ref", "value", time()+ 60*60*24*30*3);   zmiana wartosci
+    
+ob_start(); // output buffering start 
 ?>
 
 <html>
@@ -90,6 +109,8 @@
         </form>    
         <?php
            }
+        ob_end_flush();
+        
         ?>
     </body>
 </html>
