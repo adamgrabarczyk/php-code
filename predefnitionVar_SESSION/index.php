@@ -44,6 +44,14 @@ session_start(); // od tego czasu mozemy tworzyc zmienne sesyjne $_SESSION['nazw
 
        <?php
 
+       
+       if(isset($_GET['akcja']) && $_GET['akcja'] == 'wyloguj') {
+           
+            $_SESSION['zalogowany'] = 0;
+           
+            echo 'zostałeś wylogowany <br/>';
+       }
+       
 if ((isset($_POST['login']) && isset($_POST['haslo'])) || $_SESSION['zalogowany'] == 1)
 {
     
@@ -58,6 +66,8 @@ if ((isset($_POST['login']) && isset($_POST['haslo'])) || $_SESSION['zalogowany'
             
             echo 'jestes zalogowany: '.$login."<br/>";
             echo 'panel administracyjny <br/>';
+            echo '<a href="index.php">odswiez</a><br/>';
+            echo '<a href="index.php?akcja=wyloguj">wyloguj</a><br/>';
             
             $_SESSION['zalogowany'] = 1 ;
             
