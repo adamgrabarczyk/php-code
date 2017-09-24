@@ -30,14 +30,19 @@
         if(isset($_FILES['plik']))
         {
             
-            print_r($_FILES['plik']);
             
-            move_uploaded_file($_FILES['plik']['tmp_name'],"images/".$_FILES['plik']['name']);
-            
-            switch ($_FILES['plik']['error'])
+                
+                
+        switch ($_FILES['plik']['error'])
             {
                 case 0;                      // gdy jest 0 to jest okey,to nie error
-                    
+            if($_FILES['plik']['type'] == "image/jpeg" || $_FILES['plik']['type'] == "image/gif" || $_FILES['plik']['type'] == "image/png")
+            {
+            move_uploaded_file($_FILES['plik']['tmp_name'],"images/".$_FILES['plik']['name']);
+        echo 'plik zaladowany';    
+            } else 
+                
+                echo 'nie dozwolony format danych'; 
                     
                     break;
                 
