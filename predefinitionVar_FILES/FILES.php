@@ -7,7 +7,7 @@
     <body>
         
         
-        <form action="FILES.php" method="post" enctype="multipart/for-data">
+        <form action="FILES.php" method="post" enctype="multipart/form-data">
             
             <div>
                 <input type="hidden" name="MAX_FILE_SIZE" value="30720">
@@ -26,7 +26,36 @@
         
         
         <?php
-        // put your code here
+        
+        if(isset($_FILES['plik']))
+        {
+            switch ($_FILES['plik']['error'])
+            {
+                case 0;                      // gdy jest 0 to jest okey,to nie error
+                    
+                    
+                    break;
+                
+                case 1;
+                    echo 'za duzy plik';
+                    break;
+                
+                case 2;
+                    echo 'za duzy plik';
+                    break;
+                
+                case 3;
+                    echo 'plik niepelny';
+                    break;
+                
+                case 4;
+                    echo 'nie wybrales pliku';
+                    break;
+               
+                
+            }
+        }
+        
         ?>
     </body>
 </html>
