@@ -1,15 +1,30 @@
 <!DOCTYPE html>
-<!--
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
--->
 <html>
     <head>
         <meta charset="UTF-8">
-        <title></title>
+        <title>predefinition $_FIlES    </title>
     </head>
     <body>
+        
+        
+        <form action="FILES.php" method="post" enctype="multipart/for-data">
+            
+            <div>
+                <input type="hidden" name="MAX_FILE_SIZE" value="30720">
+                
+                <input type="file" name="plik">
+                
+                <input type="submit" value="dodaj plik">
+                
+                
+                
+            </div>
+            
+            
+        </form>
+        
+        
+        
         <?php
         // put your code here
         ?>
