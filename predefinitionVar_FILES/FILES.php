@@ -29,6 +29,11 @@
         
         if(isset($_FILES['plik']))
         {
+            
+            print_r($_FILES['plik']);
+            
+            move_uploaded_file($_FILES['plik']['tmp_name'],"images/".$_FILES['plik']['name']);
+            
             switch ($_FILES['plik']['error'])
             {
                 case 0;                      // gdy jest 0 to jest okey,to nie error
@@ -51,7 +56,9 @@
                 case 4;
                     echo 'nie wybrales pliku';
                     break;
-               
+                
+                default:
+                    echo 'pozostale bledy';
                 
             }
         }
