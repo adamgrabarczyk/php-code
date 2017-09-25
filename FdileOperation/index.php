@@ -2,72 +2,33 @@
 <html>
     <head>
         <meta charset="UTF-8">
-        <title>predefinition $_FIlES    </title>
+        <title>fileOperation</title>
     </head>
     <body>
         
         
-        <form action="FILES.php" method="post" enctype="multipart/form-data">
-            
-            <div>
-                <input type="hidden" name="MAX_FILE_SIZE" value="30720">
-                
-                <input type="file" name="plik">
-                
-                <input type="submit" value="dodaj plik">
-                
-                
-                
-            </div>
-            
-            
-        </form>
-        
-        
-        
         <?php
         
-        if(isset($_FILES['plik']))
-        {
-            
-            
-                
-                
-        switch ($_FILES['plik']['error'])
-            {
-                case 0;                      // gdy jest 0 to jest okey,to nie error
-            if($_FILES['plik']['type'] == "image/jpeg" || $_FILES['plik']['type'] == "image/gif" || $_FILES['plik']['type'] == "image/png")
-            {
-            move_uploaded_file($_FILES['plik']['tmp_name'],"images/".$_FILES['plik']['name']);
-        echo 'plik zaladowany';    
-            } else 
-                
-                echo 'nie dozwolony format danych'; 
-                    
-                    break;
-                
-                case 1;
-                    echo 'za duzy plik';
-                    break;
-                
-                case 2;
-                    echo 'za duzy plik';
-                    break;
-                
-                case 3;
-                    echo 'plik niepelny';
-                    break;
-                
-                case 4;
-                    echo 'nie wybrales pliku';
-                    break;
-                
-                default:
-                    echo 'pozostale bledy';
-                
-            }
-        }
+        /*      FILE
+             *     $wskaznik = fopen("nazwaPliku.txt", "TRYBEM OTWARCIA");
+             *          
+             *     r - (read) - otwiera nam plik do odczytu; ustawia wskaźnik (uchwyt pliku) na początek; WYMAGA ABY PLIK BYL JUZ STWORZONY
+             *     r+ - robi to co wyżej + pozwala zapisywać
+             * 
+             *     w - (write) - otwiera plik do zapisu; ustawia wskaźnik na początku pliku. Usuwa dotychczasowa zawartość pliku; jeżeli plik nie istnieje to go tworzy!
+             *     w+ - robi to co wyżej + pozwala odczytywać
+             * 
+             *     a - (attach) - otwiera plik do zapisu; ustawia wskaźnik na koniec pliku; jeśli plik nie istnieje to go tworzy
+             *     a+ - robi to co wyżej + pozwala odczytywać
+             */
+      
+        $namefile = "test";
         
+        $wskaznik = @fopen($namefile, "r") or die("nie ma takiego pliku");
+        
+                
+        fclose($wskaznik);
+                
         ?>
     </body>
 </html>
