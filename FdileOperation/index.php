@@ -24,7 +24,7 @@
       
         $namefile = "test.txt";
         
-        $wskaznik = @fopen($namefile, "w"); // @ blokuje wyswietlania warningow
+        $wskaznik = @fopen($namefile, "r+"); // @ blokuje wyswietlania warningow
         
         if($wskaznik)
         {
@@ -38,7 +38,11 @@
 //            }
             
             
-            fwrite($wskaznik, "222");
+//            fwrite($wskaznik, "222");
+            
+           $counter =  fread($wskaznik, filesize($namefile));
+            
+           echo var_dump($counter);
             
         } else {
         
