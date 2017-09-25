@@ -42,6 +42,7 @@
             
            $counter =  (int)fread($wskaznik, filesize($namefile));
             
+           rewind($wskaznik);
            $counter++;
            
            
