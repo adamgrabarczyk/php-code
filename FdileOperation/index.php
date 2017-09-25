@@ -29,7 +29,7 @@
         if($wskaznik)
         {
          
-            $tresc = fread($wskaznik, 4);
+            $tresc = fread($wskaznik, filesize($namefile));
             
             echo $tresc;
             
