@@ -24,10 +24,20 @@
       
         $namefile = "test";
         
-        $wskaznik = @fopen($namefile, "r") or die("nie ma takiego pliku");
+        $wskaznik = @fopen($namefile, "r"); // @ blokuje wyswietlania warningow
         
-                
-        fclose($wskaznik);
+        if($wskaznik)
+        {
+            
+            
+        } else {
+        
+            echo 'nie ma takeigo pliku';
+            
+        } 
+            
+            
+        @fclose($wskaznik);   // zamyka plik
                 
         ?>
     </body>
