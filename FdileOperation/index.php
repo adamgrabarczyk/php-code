@@ -29,9 +29,13 @@
         if($wskaznik)
         {
          
-            $tresc = fread($wskaznik, filesize($namefile));
+//            $tresc = fread($wskaznik, filesize($namefile));
             
-            echo $tresc;
+            while ($linia = fgets($wskaznik))
+            {
+                echo $linia."<br/>";
+                
+            }
             
         } else {
         
