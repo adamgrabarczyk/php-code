@@ -24,18 +24,21 @@
       
         $namefile = "test.txt";
         
-        $wskaznik = @fopen($namefile, "r"); // @ blokuje wyswietlania warningow
+        $wskaznik = @fopen($namefile, "r+"); // @ blokuje wyswietlania warningow
         
         if($wskaznik)
         {
          
 //            $tresc = fread($wskaznik, filesize($namefile));
             
-            while ($linia = fgets($wskaznik))
-            {
-                echo $linia."<br/>";
-                
-            }
+//            while ($linia = fgets($wskaznik))
+//            {
+//                echo $linia."<br/>";
+//                
+//            }
+            
+            
+            fwrite($wskaznik, "tralal");
             
         } else {
         
