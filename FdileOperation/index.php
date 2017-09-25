@@ -40,7 +40,7 @@
             
 //            fwrite($wskaznik, "222");
             
-           $counter =  fread($wskaznik, filesize($namefile));
+           $counter =  (int)fread($wskaznik, filesize($namefile));
             
            echo var_dump($counter);
             
