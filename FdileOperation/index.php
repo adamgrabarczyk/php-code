@@ -9,7 +9,7 @@
         
         <?php
         
-        /*      FILE
+        /*      FILE - TRYBY OTWARCIA
              *     $wskaznik = fopen("nazwaPliku.txt", "TRYBEM OTWARCIA");
              *          
              *     r - (read) - otwiera nam plik do odczytu; ustawia wskaźnik (uchwyt pliku) na początek; WYMAGA ABY PLIK BYL JUZ STWORZONY
@@ -24,7 +24,7 @@
       
         $namefile = "test.txt";
         
-        $wskaznik = @fopen($namefile, "r+"); // @ blokuje wyswietlania warningow
+        $wskaznik = @fopen($namefile, "w"); // @ blokuje wyswietlania warningow
         
         if($wskaznik)
         {
@@ -38,7 +38,7 @@
 //            }
             
             
-            fwrite($wskaznik, "tralal");
+            fwrite($wskaznik, "");
             
         } else {
         
