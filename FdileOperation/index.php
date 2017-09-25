@@ -42,7 +42,10 @@
             
            $counter =  (int)fread($wskaznik, filesize($namefile));
             
-           echo var_dump($counter);
+           $counter++;
+           
+           
+           fwrite($wskaznik, $counter);
             
         } else {
         
