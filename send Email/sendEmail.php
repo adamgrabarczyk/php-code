@@ -1,17 +1,34 @@
 <!DOCTYPE html>
-<!--
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
--->
+
 <html>
     <head>
         <meta charset="UTF-8">
-        <title></title>
+        <title>Send Email</title>
     </head>
     <body>
         <?php
-        // put your code here
+
+            $do    = "emailadresata@przyklad.pl";
+            $temat = "Temat wiadomości";
+            $tresc = "<b>Testowy</b> e-mail do $do o treśći\n<br />".
+                     "Tekst w następnej lini\n".
+                     "Jeszcze jedna linia";
+            $tresc = wordwrap($tresc, 70);
+            $tresc = str_replace("\n.", "\n..", $tresc);
+            
+            $naglowki = "Content-type: text/html; charset=UTF8\r\n".
+                        "From: "."naszemail@domena.pl"."\r\n".
+                        "Reply-to: "."naszemail@domena.pl"."\r\n";
+            
+            
+            mail($do, $temat, $tresc, $naglowki);
+            
+            //text/html
+                   
+        
+        
+        
+        
         ?>
     </body>
 </html>
