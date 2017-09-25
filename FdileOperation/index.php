@@ -38,7 +38,7 @@
 //            }
             
             
-            fwrite($wskaznik, "");
+            fwrite($wskaznik, "222");
             
         } else {
         
