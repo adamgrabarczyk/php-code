@@ -22,13 +22,16 @@
              *     a+ - robi to co wyżej + pozwala odczytywać
              */
       
-        $namefile = "test";
+        $namefile = "test.txt";
         
         $wskaznik = @fopen($namefile, "r"); // @ blokuje wyswietlania warningow
         
         if($wskaznik)
         {
+         
+            $tresc = fread($wskaznik, 4);
             
+            echo $tresc;
             
         } else {
         
