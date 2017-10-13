@@ -8,6 +8,12 @@ class Time{
         
         
     public $futureTime;
+        
+    public $currentTime;
+    
+    function __construct() {
+        echo 'test';
+    }
             
         function setFutureTime ($days, $pattern = "H:i:s d M Y") {
             
