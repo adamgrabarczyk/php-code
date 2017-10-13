@@ -12,9 +12,13 @@ class Time{
         
     public $currentTime;
     
-    function __construct() {
+    public $timeZone;
+    
+    function __construct($timeZone =self:: DEFAULT_TIME_ZONE ) {    // self:: oznacza odwołanie do siebie(danej klasy).  
 
-date_default_timezone_set(DEFAULT_TIME_ZONE);
+        $this->timeZone = $timeZone;                               // za pomocą this odwolujemy sie do wyzej zdefiniowanego time zione a bez this do tego w parametrze
+        
+date_default_timezone_set($this->timeZone);
 
 
         $this->currentTime = $this->getCurrentTime();                     // konstruktor jest wywoływany jeden raz dla każdej instancji klasy

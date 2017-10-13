@@ -14,9 +14,9 @@
 
 
         
-       $a =  new Time;
+       $a =  new Time();
        
-       $b =  new Time;
+       $b =  new Time("America/Atka");
         
         
        
@@ -29,6 +29,8 @@
        echo $b->futureTime."<br/><br/>";
        
        echo $a."<br/><br/>";
+       
+       echo $b."<br/><br/>";
 //        echo getCurrentTime()."<br/>";
 //        echo getFutureTime(10)."<br/>";
 //       
