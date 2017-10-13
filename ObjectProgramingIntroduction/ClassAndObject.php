@@ -18,7 +18,7 @@
        
        $b =  new Time("America/Atka");
         
-        
+        $c = new Time("Australia/Yancowinna");
        
        echo $a->setFutureTime(5)."<br/>";
        echo $b->setFutureTime(10)."<br/>";
@@ -32,13 +32,16 @@
        
        echo $b."<br/><br/>";
        
+       echo $c."<br/><br/>";
+       
        
        $a->setFutureTime("4");
        
        echo $a->futureTime."<br/><br/>";
        
        echo $a->timeZone."<br/>";
-       echo $b->timeZone."<br/><br/>";
+       echo $b->timeZone."<br/>";
+       echo $c->timeZone."<br/><br/>";
 //        echo getCurrentTime()."<br/>";
 //        echo getFutureTime(10)."<br/>";
 //       
