@@ -7,9 +7,13 @@ class Time{
 // date_default_timezone_set("Europe/Warsaw");
         
         
-        function getFutureTime ($days, $pattern = "H:i:s d M Y") {
+    public $futureTime;
             
-            return date( $pattern, strtotime("+ $days days") );;;
+        function setFutureTime ($days, $pattern = "H:i:s d M Y") {
+            
+            $this->futureTime = date( $pattern, strtotime("+ $days days") );;
+            
+            return $this->futureTime;
         }
 
 

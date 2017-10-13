@@ -20,9 +20,13 @@
         
         
        
-       echo $a->getFutureTime(5)."<br/>";
-       echo $b->getFutureTime(10)."<br/>";
+       echo $a->setFutureTime(5)."<br/>";
+       echo $b->setFutureTime(10)."<br/>";
        
+       
+       echo $a->futureTime."<br/>";
+       $b->setFutureTime(2);
+       echo $b->futureTime."<br/>";
 //        echo getCurrentTime()."<br/>";
 //        echo getFutureTime(10)."<br/>";
 //       
