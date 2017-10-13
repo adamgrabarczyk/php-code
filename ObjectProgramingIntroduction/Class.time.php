@@ -1,8 +1,12 @@
 <?php
 
-date_default_timezone_set("Europe/Warsaw");
+
 
 class Time{
+
+    
+    const DEFAULT_TIME_ZONE = "Europe/Warsaw";
+
 
 // date_default_timezone_set("Europe/Warsaw");
         
@@ -12,6 +16,10 @@ class Time{
     public $currentTime;
     
     function __construct() {
+
+date_default_timezone_set(DEFAULT_TIME_ZONE_);
+
+
         $this->currentTime = $this->getCurrentTime();                     // konstruktor jest wywoływany jeden raz dla każdej instancji klasy
     }
     
