@@ -9,13 +9,19 @@
     <body>
         <?php
 
-        require_once('Class.time.php');                // wymaga tego pliku do wykonania dalszej częsci kodu (dołącza tylko raz)
+        require_once('Class.time.php');          // wymaga tego pliku do wykonania dalszej częsci kodu (dołącza tylko raz)
        
 
 
-        echo getCurrentTime()."<br/>";
-        echo getFutureTime(10)."<br/>";
+        
+       $a =  new Time;
        
+       $b =  new Time;
+        
+        
+//        echo getCurrentTime()."<br/>";
+//        echo getFutureTime(10)."<br/>";
+//       
                    
         
         

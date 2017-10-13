@@ -1,10 +1,10 @@
 <?php
 
-
+date_default_timezone_set("Europe/Warsaw");
 
 class Time{
 
- date_default_timezone_set("Europe/Warsaw");
+// date_default_timezone_set("Europe/Warsaw");
         
         
         function getFutureTime ($days, $pattern = "H:i:s d M Y") {
