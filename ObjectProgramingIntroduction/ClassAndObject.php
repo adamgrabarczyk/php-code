@@ -26,7 +26,9 @@
        
        echo $a->futureTime."<br/>";
        $b->setFutureTime(2);
-       echo $b->futureTime."<br/>";
+       echo $b->futureTime."<br/><br/>";
+       
+       echo $a."<br/><br/>";
 //        echo getCurrentTime()."<br/>";
 //        echo getFutureTime(10)."<br/>";
 //       

@@ -12,8 +12,17 @@ class Time{
     public $currentTime;
     
     function __construct() {
-        echo 'test';
+        $this->currentTime = $this->getCurrentTime();                     // konstruktor jest wywoływany jeden raz dla każdej instancji klasy
     }
+    
+    
+    function __toString() {
+        return $this->currentTime;
+    }
+            
+    
+    
+    
             
         function setFutureTime ($days, $pattern = "H:i:s d M Y") {
             
