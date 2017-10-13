@@ -1,6 +1,9 @@
 <?php
 
 
+
+class Time{
+
  date_default_timezone_set("Europe/Warsaw");
         
         
@@ -14,6 +17,6 @@
            
             
             return date( $pattern, time() );;
-        }
-
+        } 
+}
 ?>

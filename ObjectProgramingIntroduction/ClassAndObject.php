@@ -9,7 +9,7 @@
     <body>
         <?php
 
-        include ('time.php');
+        require_once('Class.time.php');                // wymaga tego pliku do wykonania dalszej częsci kodu (dołącza tylko raz)
        
 
 
