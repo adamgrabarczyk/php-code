@@ -19,6 +19,10 @@
        $b =  new Time;
         
         
+       
+       echo $a->getFutureTime(5)."<br/>";
+       echo $b->getFutureTime(10)."<br/>";
+       
 //        echo getCurrentTime()."<br/>";
 //        echo getFutureTime(10)."<br/>";
 //       
