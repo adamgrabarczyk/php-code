@@ -31,6 +31,14 @@
        echo $a."<br/><br/>";
        
        echo $b."<br/><br/>";
+       
+       
+       $a->setFutureTime("4");
+       
+       echo $a->futureTime."<br/><br/>";
+       
+       echo $a->timeZone."<br/>";
+       echo $b->timeZone."<br/><br/>";
 //        echo getCurrentTime()."<br/>";
 //        echo getFutureTime(10)."<br/>";
 //       

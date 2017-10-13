@@ -35,6 +35,8 @@ date_default_timezone_set($this->timeZone);
             
         function setFutureTime ($days, $pattern = "H:i:s d M Y") {
             
+            $this->setTimeZone();
+            
             $this->futureTime = date( $pattern, strtotime("+ $days days") );;
             
             return $this->futureTime;
@@ -43,8 +45,17 @@ date_default_timezone_set($this->timeZone);
 
         function getCurrentTime($pattern = "H:i:s d M Y") {
            
+            $this->setTimeZone();
             
             return date( $pattern, time() );;
         } 
+        
+        function setTimeZone() {
+            if($this->timeZone != date_default_timezone_get())
+            date_default_timezone_set($this->timeZone);
+            
+            
+        }
+        
 }
 ?>
