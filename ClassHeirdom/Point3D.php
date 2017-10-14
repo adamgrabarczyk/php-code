@@ -1,8 +1,20 @@
 <?php
+require_once("Point2D.php");
 
-/* 
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+class Point3D extends Point2D {
+    
+    protected $z;
 
+
+    public function __construct($x = 0, $y = 0, $z = 0)
+            {
+        
+        
+        parent::__construct($x, $y);
+        
+        $this->z = $z; 
+    }
+    
+}
+
+?>

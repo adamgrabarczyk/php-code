@@ -1,5 +1,7 @@
 <?php
 
+require_once("point.php");
+
 
 class Point2D extends Point {
     
