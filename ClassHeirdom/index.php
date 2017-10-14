@@ -16,13 +16,13 @@
         
        $p = new Point(40);
        
-       echo $p->x."<br/><br/>";
+//       echo $p->x."<br/><br/>";
        
        $p2 = new Point2D(80,50);
-       $p2->setX(70);
+       $p2->setX(20);
        
        echo $p2->getX()."<br/>";
-       echo $p2->y."<br/>";
+       echo $p2->getY()."<br/>";
        
        
         ?>
