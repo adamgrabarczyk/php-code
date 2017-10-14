@@ -11,13 +11,19 @@
 
         
         require_once("point.php");
+         require_once("Point2D.php");
         
         
        $p = new Point(40);
-        
        
-       echo $p->x."<br/>";
-        
+       echo $p->x."<br/><br/>";
+       
+       $p2 = new Point2D(80,50);
+       
+       echo $p2->x."<br/>";
+       echo $p2->y."<br/>";
+       
+       
         ?>
     </body>
 </html>
