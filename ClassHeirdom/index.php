@@ -13,7 +13,7 @@
         require_once("point.php");
         
         
-       $p = new Point();
+       $p = new Point(40);
         
        
        echo $p->x."<br/>";
