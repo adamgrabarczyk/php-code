@@ -19,8 +19,9 @@
        echo $p->x."<br/><br/>";
        
        $p2 = new Point2D(80,50);
+       $p2->setX(70);
        
-       echo $p2->x."<br/>";
+       echo $p2->getX()."<br/>";
        echo $p2->y."<br/>";
        
        

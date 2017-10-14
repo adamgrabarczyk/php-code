@@ -1,7 +1,7 @@
 <?php
 
 
-class Point2D {
+class Point2D extends Point {
     
     
     
@@ -12,7 +12,7 @@ class Point2D {
    public function __construct($x = 0, $y = 0) {     // ustawiamy wartosc domyslna dla x
         
        
-       $this->x = $x;
+       parent::__construct($x);
        
        $this->y = $y;
    }
