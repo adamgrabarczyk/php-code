@@ -12,7 +12,7 @@
         require_once("AnimalAbstract.php");
         require_once("Dog.php");
         
-        new Dog();
+        $p = new Dog();
        
        
         ?>
