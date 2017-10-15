@@ -18,10 +18,20 @@
             function display();                // domyślnie ma ustawione public i abstract 
         }
         
+        interface buttons {
+            
+            function on();
+        }
+
+
         
-        class MonitorA implements screean {
+        class MonitorA implements screean, buttons {
             
             function display() {
+                ;
+            }
+            
+            function on() {
                 ;
             }
         }
