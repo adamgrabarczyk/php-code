@@ -14,6 +14,10 @@
         
         $p = new Dog();
        
+        
+        $p->eat();
+        $p->eat();
+        
        
         ?>
     </body>
