@@ -3,26 +3,16 @@
 <html>
     <head>
         <meta charset="UTF-8">
-        <title> Class heirdom
+        <title> Abstract Class
    </title>
     </head>
     <body>
         <?php
 
+        require_once("AnimalAbstract.php");
+        require_once("Dog.php");
         
-        require_once("point.php");
-         require_once("Point2D.php");
-        
-        
-       $p = new Point(40);
-       
-//       echo $p->x."<br/><br/>";
-       
-       $p2 = new Point2D(80,50);
-       $p2->setX(20);
-       
-       echo $p2->getX()."<br/>";
-       echo $p2->getY()."<br/>";
+        new Dog();
        
        
         ?>
