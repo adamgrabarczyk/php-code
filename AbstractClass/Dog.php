@@ -6,10 +6,10 @@ class Dog extends AnimalAbstract {
     
     
     
-    function eat() {
+    function eat($food) {
         
         if($this->isHungry){
-            echo 'jem<br/>';
+            echo 'jem '.$food.'<br/>';
             $this->isHungry = false;
             
         } else {

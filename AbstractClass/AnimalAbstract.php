@@ -9,10 +9,7 @@ abstract class AnimalAbstract {
         $this->isHungry = $isHungry;
     }
             
-            function eat() {
-        
-        
-    }
+    abstract function eat($food); 
     
    
 }
