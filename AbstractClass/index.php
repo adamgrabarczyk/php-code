@@ -15,7 +15,7 @@
         $p = new Dog();
        
         
-        $p->eat('kurcaka ');
+        $p->eat('kurcaka');
         $p->eat('groch');
         
        
