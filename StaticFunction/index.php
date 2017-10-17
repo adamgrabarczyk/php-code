@@ -11,13 +11,15 @@
 //require_once('PremmisionInterface.php');
 require_once('guest.php');
         require_once('user.php');
+        require_once('moderator.php');
+        require_once('admin.php');
         
         
        $g = new Guest();
         
        $u = new User();
        
-       
+       echo var_dump($g->isPermmitrd(Guest::READ_POST));
        
         
         ?>
