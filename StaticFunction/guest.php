@@ -1,10 +1,13 @@
 <?php
 
-require_once('PremmisionInterface.php');
+require_once('GuestAbstract.php');
 
-class Guest implements PremissionInterface {
+ class Guest extends GuestAbstract {
     
-         
+    function __construct() {
+        
+        $this->permission = PremissionInterface::READ_POST;
+    }
     
 }
 

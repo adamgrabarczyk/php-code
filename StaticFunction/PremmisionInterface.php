@@ -16,6 +16,7 @@ interface PremissionInterface {
     
     static function checkPermmission($userPermmission, $permmision);   // statyczne finkcja isnieje zawsze nawet gdy nie ma instncji klasy
     
+    
 }
 
 ?>
