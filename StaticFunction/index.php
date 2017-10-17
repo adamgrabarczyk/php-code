@@ -18,7 +18,7 @@ require_once('guest.php');
        $u = new User();
        
        
-       echo Guest::WRITE_POST;
+       
         
         ?>
     </body>
