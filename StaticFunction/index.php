@@ -19,7 +19,7 @@ require_once('guest.php');
         
        $u = new User();
        
-       echo var_dump($g->isPermmitrd(Guest::READ_POST));
+       echo var_dump($g->isPermmitrd(Guest::DELETE_USER));
        
         
         ?>
