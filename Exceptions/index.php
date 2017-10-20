@@ -15,9 +15,9 @@
          
             
         
-        $reder = new FileRead("nazwapliku.txt");
+        $reder = new FileRead("nazwaPliku.txt");
         
-        $reder->getWallContent();
+        echo $reder->getWallContent()."<br/>";
         
         }
         catch (Exception $ex) {
