@@ -10,10 +10,19 @@
 
         require_once ('FileRead.php');
         
+        try {
+            
+         
+            
         
         $reder = new FileRead("nazwapliku.txt");
         
+        $reder->getWallContent();
         
+        }
+        catch (Exception $ex) {
+            echo $ex->getMessage();
+        }
         ?>
     </body>
 </html>
