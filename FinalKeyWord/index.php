@@ -11,7 +11,7 @@
         
         class A {             // słówko final oznacza ze klasaa jest ostateczn i nie może byc rozszerzana przez klase inna
        
-            function mA() {
+           final function mA() {
             echo 'to jest funkcja z klasy a';
             }
         
@@ -19,13 +19,16 @@
         
         class B extends A {
             
+            final function mA() {
+            
+            }
             
         }
         
         
         $b = new B();
         
-        $b->mA();
+        $b->mA(); 
         
 //        echo 'final key word';
         
