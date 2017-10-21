@@ -9,14 +9,23 @@
         <?php
 
         
-       final class A {
-            
+        class A {             // słówko final oznacza ze klasaa jest ostateczn i nie może byc rozszerzana przez klase inna
+       
+            function mA() {
+            echo 'to jest funkcja z klasy a';
+            }
+        
         }
         
         class B extends A {
             
             
         }
+        
+        
+        $b = new B();
+        
+        $b->mA();
         
 //        echo 'final key word';
         
