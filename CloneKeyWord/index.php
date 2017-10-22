@@ -34,6 +34,8 @@
         
        
        $b = $a;
+       
+       $b->imie = "Wiola";
         
        echo $a->imie."<br/>";
        echo $b->imie."<br/>";
