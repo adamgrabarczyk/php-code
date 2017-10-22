@@ -1,10 +1,10 @@
 <?php
 
-namespace sameSpace;
-
+namespace sameSpace
+{
 class Customer {
     
     public $name = "Someone";
 }
-
+}
 ?>

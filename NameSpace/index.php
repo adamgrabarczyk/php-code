@@ -12,8 +12,14 @@
         
         class Customer {
             
+            public $id = 50;
+            
             
         }
+        
+        $c = new Customer();
+        
+       echo $c->id;
         
         ?>
     </body>
