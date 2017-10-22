@@ -41,7 +41,7 @@
             }
         }
         
-       $a = new student("Adam");
+       $a = new student("Adam", "brązowe");
         
        
        $b = clone $a;
@@ -50,6 +50,9 @@
         
        echo $a->imie."<br/>";
        echo $b->imie."<br/>";
+       
+       echo $a->eye->color."<br/>";
+       echo $b->eye->color."<br/>";
        
         ?>
     </body>
