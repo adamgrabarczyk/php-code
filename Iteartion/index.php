@@ -8,14 +8,14 @@
     <body>
         <?php
 
-        class A {
+        class A implements Iterator {
             
-            public $a = "one";
-            
-            protected $b = "two";
-            
-            private $c = "three";
-          
+//            public $a = "one";
+//            
+//            protected $b = "two";
+//            
+//            private $c = "three";
+//          
             
             private $tab = array("one", "two", "three");
 
@@ -46,7 +46,28 @@
         }
                 
             }
-        
+
+            public function current() {
+            
+                
+            }
+
+            public function key() {
+                
+            }
+
+            public function next() {
+                
+            }
+
+            public function rewind() {
+                
+            }
+
+            public function valid() {
+                
+            }
+
         }
         
         
@@ -58,8 +79,20 @@
 //            
 //            echo "value = $value <br/><br/>";
 //        }
-        $a->iterate();
         
+        $tab = array("one", "two", "three");
+        
+        echo current($tab);
+//        $a->iterate();
+        
+        foreach ($a as $key => $value)
+        {
+            echo "key = $key <br/>";
+            
+            echo "value = $value <br/><br/>";
+            
+            
+        }
     
         ?>
     </body>
