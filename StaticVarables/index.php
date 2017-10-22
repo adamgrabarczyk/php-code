@@ -16,7 +16,9 @@
         }
         
         
-        echo Customers::$numberOfCustomers;
+        $a[] = new Customers();
+        echo $a[4]->id."<br/>";
+        echo Customers::getNumberCustomers();
         
         
         ?>
