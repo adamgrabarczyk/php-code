@@ -15,7 +15,13 @@
             protected $b = "two";
             
             private $c = "three";
+          
             
+            public $tab = array("one", "two", "three");
+
+
+
+
             public function iterate() {
          
                 foreach ($this as $key => $value)
