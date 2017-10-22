@@ -24,9 +24,20 @@
         class student {
             
             public $imie;
-            
-            public function __construct($imie) {
+            public $eye;
+
+
+            public function __construct($imie, $color) {
                 $this->imie = $imie;
+                $this->eye = new eye($color);                // tworzymy nowy obiekt jako jedna z cech tej klassy
+            }
+        }
+        
+        class eye {
+            public $color;
+            
+            public function __construct($color) {
+                $this->color = $color;
             }
         }
         
