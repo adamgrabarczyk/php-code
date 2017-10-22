@@ -54,10 +54,12 @@
             }
 
             public function key() {
-                
+                return key($this->tab);
             }
 
             public function next() {
+                
+                next($this->tab);
                 
             }
 
@@ -67,6 +69,7 @@
             }
 
             public function valid() {
+                return (key($this->tab) !== NULL && key($this->tab) !== FALSE);
                 
             }
 
@@ -89,7 +92,7 @@
 //        echo current($tab);
 //        next($tab);
 //        echo current($tab);
-//        $a->iterate();
+        $a->iterate();
         
         foreach ($a as $key => $value)
         {
