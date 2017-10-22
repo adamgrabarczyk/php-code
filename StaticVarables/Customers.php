@@ -18,7 +18,8 @@ Class Customers {
     }
 
     
-    public static function  getNumberCustomers() {
+    public static function  getNumberCustomers() {  // static -isnieje zawsze, nie zeruje sie
+        
         
         return self::$numberOfCustomers;
     }
