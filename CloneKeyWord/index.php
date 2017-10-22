@@ -33,8 +33,9 @@
             }
        
              public function __clone(){
-                 echo 'test';
-        }
+                
+                 $this->eye = clone $this->eye;
+             }
             
             }
         
