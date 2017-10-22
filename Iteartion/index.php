@@ -17,7 +17,7 @@
             private $c = "three";
           
             
-            public $tab = array("one", "two", "three");
+            private $tab = array("one", "two", "three");
 
 
 
