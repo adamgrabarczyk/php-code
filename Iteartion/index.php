@@ -48,7 +48,8 @@
             }
 
             public function current() {
-            
+        
+                return current($this->tab);
                 
             }
 
@@ -61,7 +62,8 @@
             }
 
             public function rewind() {
-                
+         
+                reset($this->tab);
             }
 
             public function valid() {
@@ -82,7 +84,11 @@
         
         $tab = array("one", "two", "three");
         
-        echo current($tab);
+        
+        
+//        echo current($tab);
+//        next($tab);
+//        echo current($tab);
 //        $a->iterate();
         
         foreach ($a as $key => $value)
