@@ -33,7 +33,7 @@
        $a = new student("Adam");
         
        
-       $b = $a;
+       $b = clone $a;
        
        $b->imie = "Wiola";
         
