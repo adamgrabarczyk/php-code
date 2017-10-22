@@ -26,9 +26,23 @@
          
                 foreach ($this as $key => $value)
         {
+            
+            
+            if (is_array($value)){
+                
+            
+                foreach ($value as $key => $value)
+        {
             echo "key = $key <br/>";
             
             echo "value = $value <br/><br/>";
+            
+        }}
+ else {
+     echo "key = $key <br/>";
+            
+            echo "value = $value <br/><br/>";
+ }
         }
                 
             }
