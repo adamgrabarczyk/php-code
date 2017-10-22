@@ -9,17 +9,35 @@
         <?php
 
         
-        $a = 50;
+//        $a = 50;
+//        
+//        $b = &$a;               // & wiaze zmienna a ze zmienna b - zwraca te sama wartosc 
+//        
+//        
+//        $b = 70;  
+//        
+//        echo $a.'<br/>';
+//
+//        echo $b."<br/>";        
+//      
         
-        $b = &$a;
+        class student {
+            
+            public $imie;
+            
+            public function __construct($imie) {
+                $this->imie = $imie;
+            }
+        }
         
+       $a = new student("Adam");
         
-        $b = 70;  
+       
+       $b = $a;
         
-        echo $a.'<br/>';
-
-        echo $b."<br/>";        
-        
+       echo $a->imie."<br/>";
+       echo $b->imie."<br/>";
+       
         ?>
     </body>
 </html>
