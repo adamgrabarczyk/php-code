@@ -3,23 +3,17 @@
 <html>
     <head>
         <meta charset="UTF-8">
-        <title>Static Varables</title>
+        <title>Name Space</title>
     </head>
     <body>
         <?php
 
-        require_once ("Customers.php");
+        require_once ("Customer.php");
         
-        for ($i = 0; $i < 10; $i++) {
+        class Customer {
             
-            $a[$i] = new Customers();
+            
         }
-        
-        
-        $a[] = new Customers();
-        echo $a[4]->id."<br/>";
-        echo Customers::getNumberCustomers();
-        
         
         ?>
     </body>
