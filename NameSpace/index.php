@@ -17,9 +17,14 @@
             
         }
         
-        $c = new Customer();
+//        $c = new Customer();
+//        
+//      echo  $c->id;
+//      
         
-       echo $c->id;
+        $d = new \sameSpace\Customer();
+        
+        echo $d->name;
         
         ?>
     </body>
