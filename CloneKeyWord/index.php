@@ -30,7 +30,7 @@
             public function __construct($imie, $color) {
                 $this->imie = $imie;
                 $this->eye = new eye($color);                // tworzymy nowy obiekt jako jedna z cech tej klassy
-            }
+            }                                                // obiekty mogą sie składać z wielu obiektów
        
              public function __clone(){
                 
