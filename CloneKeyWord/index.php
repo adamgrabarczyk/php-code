@@ -31,7 +31,14 @@
                 $this->imie = $imie;
                 $this->eye = new eye($color);                // tworzymy nowy obiekt jako jedna z cech tej klassy
             }
+       
+             public function __clone(){
+                 echo 'test';
         }
+            
+            }
+        
+       
         
         class eye {
             public $color;
@@ -47,7 +54,8 @@
        $b = clone $a;
        
        $b->imie = "Wiola";
-        
+       $b->eye->color = "niebieski"; 
+       
        echo $a->imie."<br/>";
        echo $b->imie."<br/>";
        
