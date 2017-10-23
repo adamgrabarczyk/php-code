@@ -8,8 +8,9 @@
         <?php
 
 
+//        mysql_connect("localhost");
 
-
+        mysqli_connect("localhost");
 
 
 
