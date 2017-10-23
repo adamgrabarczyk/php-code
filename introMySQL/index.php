@@ -14,9 +14,14 @@
 
 
       if(!$mySQlConnction)
-          exit("nie udało się nawiązać połączenia z bazą");
+          die(mysqli_error());
       
       echo 'test';
+      
+      
+      
+      mysqli_close($mySQlConnction);
+      
         ?>
     </body>
 </html>
