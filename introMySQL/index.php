@@ -10,10 +10,13 @@
 
 //        mysql_connect("localhost");
 
-        mysqli_connect("localhost");
+      $mySQlConnction =  mysqli_connect("localhost");                     // łączdenie z bazą danych
 
 
-
+      if(!$mySQlConnction)
+          exit("nie udało się nawiązać połączenia z bazą");
+      
+      echo 'test';
         ?>
     </body>
 </html>
