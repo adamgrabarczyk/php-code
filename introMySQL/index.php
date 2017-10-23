@@ -12,6 +12,8 @@
 
       $mySQlConnction =  mysqli_connect("localhost");                     // łączdenie z bazą danych
 
+      
+      mysqli_select_db($mySQlConnction, "sql_dataBase");
 
       if(!$mySQlConnction)
           die(mysqli_error());
